@@ -1,12 +1,12 @@
 package ClaseFile;
 import java.io.*;
-public class ClaseFile {
+public class ClaseFile extends File{
 File file ;
 void printIfFileExists(String s_fileName)throws IOException{
 	file = new File(s_fileName);
 	System.out.println(file.exists());
 }
-void printIfFileOrDirectory(String s_fileName)throws IOException{
+void printIfFileOrDirectory (String s_fileName)throws IOException {
 	file = new File(s_fileName);
 	if(file.isDirectory()==true){
 		System.out.println("is Directory");
